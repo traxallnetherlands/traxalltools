@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraXall Tools</title>
 
     <style>
-        body, html {
+        body,
+        html {
             height: 100%;
             margin: 0;
             display: flex;
@@ -24,8 +26,7 @@
             background-color: white;
             padding: 30px;
             border-radius: 10px;
-            max-width: 400px;
-            width: 100%;
+            width: fit-content;
         }
 
         .image-container img {
@@ -33,22 +34,27 @@
             height: auto;
         }
 
-        h1 {
-            color: #213153;
-            margin-bottom: 10px;
+        .buttons-container {
+            display: grid;
+            grid-auto-flow: column;
+            grid-template-rows: repeat(5, auto);
+            gap: 20px;
         }
 
         .button {
-            width: 100%;
+            width: 280px;
             padding: 15px;
             background-color: #213153;
             color: white;
             border: none;
             border-radius: 8px;
             font-size: 16px;
-            cursor: pointer;
             text-decoration: none;
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            transition: background-color 0.2s;
         }
 
         .button:hover {
@@ -58,52 +64,66 @@
 </head>
 
 <body>
+
     <div class="container">
 
         <div class="image-container">
-            <!-- Zet hier je logo -->
             <img src="logo-traxall-tools.png" alt="TraXall Tools Logo">
         </div>
-<a href="https://traxallnetherlands.github.io/rdw-kentekendata/" 
-   class="button">
-   RDW Kentekendata
-</a>
-<a href="https://traxallnetherlands.github.io/factuurcontrole/" 
-   class="button">
-   Factuurcontrole
-</a>
-<a href="https://traxallnetherlands.github.io/inhoudingen/" 
-   class="button">
-   Inhoudingen (Work in Progress)
-</a>
-<a href="https://traxallnetherlands.github.io/bijtellingscalculator/" 
-   class="button">
-   Bijtellingscalculator
-</a>
-<a href="https://traxallnetherlands.github.io/aantallenvoorfacturen/" 
-   class="button">
-   Aantallen (Work in Progress)
-</a>            
-<a href="https://traxallnetherlands.github.io/contractwijziging-matrixcontrole/" 
-   class="button">
-   Contractwijziging Matrixcontrole
-</a>                
-<a href="https://traxallnetherlands.github.io/update-kilometerstanden/" 
-   class="button">
-   Update kilometerstanden
-</a>                    
-<a href="https://traxallnetherlands.github.io/vloot-analyse-intern/" 
-   class="button">
-   Vloot Analyse Intern
-</a>                        
-<a href="https://traxallnetherlands.github.io/kostenrapportagev0.1/" 
-   class="button">
-   Kostenrapportage
-</a>                            
-<a href="https://traxallnetherlands.github.io/mutatierapportage/" 
-   class="button">
-   Mutatierapportage
-</a>
-</div>
+
+        <div class="buttons-container">
+
+            <a href="https://traxallnetherlands.github.io/rdw-kentekendata/" class="button">
+                RDW Kentekendata
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/factuurcontrole/" class="button">
+                Factuurcontrole
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/inhoudingen/" class="button">
+                Inhoudingen (Work in Progress)
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/bijtellingscalculator/" class="button">
+                Bijtellingscalculator
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/aantallenvoorfacturen/" class="button">
+                Aantallen (Work in Progress)
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/contractwijziging-matrixcontrole/" class="button">
+                Contractwijziging Matrixcontrole
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/update-kilometerstanden/" class="button">
+                Update kilometerstanden
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/vloot-analyse-intern/" class="button">
+                Vloot Analyse Intern
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/kostenrapportagev0.1/" class="button">
+                Kostenrapportage
+            </a>
+
+            <a href="https://traxallnetherlands.github.io/mutatierapportage/" class="button">
+                Mutatierapportage
+            </a>
+            
+            <a href="https://traxallnetherlands.github.io/mutatierapportage/" class="button">
+                Testknop
+            </a>
+            
+            <a href="https://traxallnetherlands.github.io/mutatierapportage/" class="button">
+                Testknop2
+            </a>
+                        
+        </div>
+
+    </div>
+
 </body>
 </html>
